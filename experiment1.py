@@ -14,7 +14,7 @@ print('threshold: ', threshold)
 
 class Policy():
     # def __init__(self, s_size=4, a_size=2):
-    def __init__(self, s_size=6, a_size=2):
+    def __init__(self, s_size=6, a_size=3):
         self.w = 1e-4*np.random.rand(s_size, a_size)  # weights for simple linear policy: state_space x action_space
         
     def forward(self, state):
